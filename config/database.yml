@@ -22,4 +22,6 @@ test:
 
 production:
   adapter: postgresql
-  database: nfe-randomizer
+  database: rails-nfe-randomizer_production
+  username: rails-nfe-randomizer
+  password: <%= ENV['MYAPP_DATABASE_PASSWORD'] %>
